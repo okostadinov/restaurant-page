@@ -1,0 +1,146 @@
+@font-face {
+    font-family: 'montserratregular';
+    src: url('montserrat-regular-webfont.woff2') format('woff2'),
+         url('montserrat-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'great_vibesregular';
+    src: url('greatvibes-regular-webfont.woff2') format('woff2'),
+         url('greatvibes-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    --container-color: rgba(161, 201, 123, 0.3);
+    --top-color: beige;
+    --font-color-dark: #333;
+    --font-color-light: #ddd;
+    --background-light: rgba(0, 0, 0, 0.3);
+    --background-dark: rgba(0, 0, 0, 0.7);
+}
+
+html, body {
+    color: var(--font-color-dark);
+    font-family:'montserratregular', sans-serif;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+    background-color: var(--container-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h1 {
+    margin: 0;
+    padding: 20px 0;
+    font-family: 'great_vibesregular';
+    font-size: 80px;
+    background-color: var(--top-color);
+    text-align: center;
+}
+
+.tab {
+    background-color: var(--top-color);
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    border-bottom: 2px solid var(--container-color);
+    box-shadow: 0px 2px 3px var(--background-light);
+}
+
+.tab-container {
+    background-image: url('./rila.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.tab-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hidden {
+    display: none;
+}
+
+.btn-tab {
+    cursor: pointer;
+    border: none;
+    font-size: 26px;
+    color: var(--font-color-dark);
+    background-color: transparent;
+    padding: 10px;
+    box-shadow: 0px 2px 0px var(--background-light);
+}
+
+.btn-tab:hover {
+    transform: translateY(-5%);
+}
+
+.btn-tab.btn-active {
+    box-shadow: 0px 3px 0px rgba(0, 0, 0, 0.5);
+}
+
+.img-background {
+    width: 100%;
+    height: auto;
+}
+
+.inner-div {
+    margin: 80px 0;
+    color: var(--font-color-light);
+    background-color: var(--background-dark);
+    border: 1px solid var(--background-light);
+    border-radius: 20px;
+    width: 50%;
+    padding: 0 50px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.info-text {
+    font-family: 'great_vibesregular';
+    font-size: 34px;
+}
+
+.item-image {
+    float:inline-start;
+    border: 1px solid var(--background-light);
+    border-radius: 10px;
+    margin: 10px;
+    width: 25%;
+}
+
+.item-desc {
+    font-family: 'great_vibesregular';
+    font-size: 28px;
+    float:inline-end;
+    margin: 10px;
+    width: 60%;
+}
+
+.loc-image {
+    border: 1px solid var(--background-light);
+    border-radius: 10px;
+    justify-self: flex-start;
+    align-self: flex-start;
+    margin: 20px;
+    width: 80%;
+}
+
+.contact-info {
+    font-style: italic;
+    font-size: 26px;
+    color: var(--font-color-light);
+}
